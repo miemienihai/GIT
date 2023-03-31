@@ -3,7 +3,7 @@ m1 {
     border-left: 5px solid #dae0e6;
     padding: 0 0 0 10px;
     color: #666;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 /* 18 */
@@ -13,13 +13,13 @@ m3 {
     border-left: 5px solid #78b4f0;
     padding: 0 0 0 10px;
     color: #666;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 /* 18 */
 m2 {
     margin-top: 0;
-    font-size: 26px;
+    font-size: 19px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -51,7 +51,7 @@ velvet-sun {
 }
 
 div12 {
-    font-size: 44px;
+    font-size: 32px;
     color: #336699;
     font-weight: bold;
     margin-bottom: 15px;
@@ -65,7 +65,7 @@ div13 {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-size: 30px;
+    font-size: 21px;
     color: #888888;
     font-weight: bold;
     letter-spacing: 3px;
