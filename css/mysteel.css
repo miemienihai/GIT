@@ -19,7 +19,7 @@ m3 {
 /* 18 */
 m2 {
     margin-top: 0;
-    font-size: 19px;
+    font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -54,7 +54,7 @@ div12 {
     font-size: 32px;
     color: #336699;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
     font-family: PingFangSC-Medium, Semibold;
 }
 
