@@ -40,7 +40,7 @@ blockquote {
     font-size: 20px;
     line-height: 1.8;
     letter-spacing: 1.1px;
-    font-family: PingFang HK, Semibold;
+    font-family: STKaiti;
 }
 
 /* 13 */
@@ -54,7 +54,7 @@ div12 {
     color: #336699;
     font-weight: bold;
     margin-bottom: 15px;
-    font-family: PingFang HK, Semibold;
+    font-family: PingFangSC-Medium, Semibold;
 }
 
 /* 44 */
@@ -68,7 +68,7 @@ div13 {
     color: #888888;
     font-weight: bold;
     letter-spacing: 3px;
-    font-family: PingFangSC-Medium, sans-serif;
+    font-family: PingFangSC-Medium, Semibold;
 }
 
 /* 30 */
@@ -81,7 +81,7 @@ div14 {
     margin-top: 0px;
     display: inline-block;
     width: 100%;
-    font-family: PingFangSC-Medium, sans-serif;
+    font-family: PingFangSC-Medium, Semibold;
     font-size: 13px;
     font-weight: bold;
     color: #888888;
