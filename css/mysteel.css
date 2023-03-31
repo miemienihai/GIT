@@ -3,24 +3,28 @@ m1 {
     border-left: 5px solid #dae0e6;
     padding: 0 0 0 10px;
     color: #666;
-    font-size: 18px;
+    font-size: 36px;
 }
+
+/* 18 */
 
 m3 {
     margin-top: 0;
     border-left: 5px solid #78b4f0;
     padding: 0 0 0 10px;
     color: #666;
-    font-size: 18px;
+    font-size: 36px;
 }
 
+/* 18 */
 m2 {
     margin-top: 0;
-    font-size: 13px;
+    font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
+/* 13 */
 h4,
 h5,
 h6,
@@ -33,39 +37,42 @@ blockquote {
     margin-bottom: 10px;
     color: #333333;
     text-shadow: transparent 0px 0px 0px, rgba(#36414d) 0px 0px 0px !important;
-    font-size: 13px;
+    font-size: 26px;
     line-height: 1.8;
     font-weight: bold;
     letter-spacing: 1.1px;
     font-family: Microsoft YaHei UI, Semibold;
 }
 
+/* 13 */
 velvet-sun {
     background: linear-gradient(to right, #e1eec3, #f05053);
     width: 710px;
 }
 
 div12 {
-    font-size: 22px;
+    font-size: 44px;
     color: #336699;
     font-weight: bold;
     margin-bottom: 15px;
     font-family: PingFang HK, Semibold;
 }
 
+/* 44 */
 div13 {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-size: 15px;
+    font-size: 30px;
     color: #888888;
     font-weight: bold;
     letter-spacing: 3px;
     font-family: PingFangSC-Medium, sans-serif;
 }
 
+/* 30 */
 hr {
     border-color: #B0C4DE !important;
 }
@@ -80,3 +87,5 @@ div14 {
     font-weight: bold;
     color: #888888;
 }
+
+/* 26 */
