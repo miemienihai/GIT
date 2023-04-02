@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'font';
+    src: url('../fonts/STKaiti.eot');
+    src: url('../fonts/STKaiti.eot?#font-spider') format('embedded-opentype'),
+        url('../fonts/STKaiti.woff2') format('woff2'),
+        url('../fonts/STKaiti.woff') format('woff'),
+        url('../fonts/STKaiti.ttf') format('truetype'),
+        url('../fonts/STKaiti.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 
+@font-face {
+    font-family: '$font';
+    src: url(data:application/font-eot;charset=utf-8;base64,$eot) format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '$font';
+    src: url(data:application/font-woff2;charset=utf-8;base64,$woff2) format('woff2'),
+        url(data:application/font-woff;charset=utf-8;base64,$woff) format('woff'),
+        url(data:application/font-ttf;charset=utf-8;base64,$ttf) format('truetype'),
+        url(data:application/font-svg;charset=utf-8;base64,$svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
