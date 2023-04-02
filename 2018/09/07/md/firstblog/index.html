@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hexo</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hexo">
+  <title>typora-vue-theme主题介绍 | Hexo</title>
+  <meta name="keywords" content=" Typora , Markdown , blodTest ">
+  <meta name="description" content="typora-vue-theme主题介绍 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="m1 {     margin-top: 0;     border-left: 5px solid #dae0e6;     padding: 0 0 0 10px;     color: #666;     font-size: 26px; }  &#x2F;* 18 *&#x2F;  m3 {     margin-top: 0;     border-left: 5px solid #78b4f0;">
 <meta property="og:type" content="article">
@@ -56,7 +56,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -304,10 +304,64 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-md/firstblog" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">typora-vue-theme主题介绍</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Markdown">Markdown</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">Typora</a>
+            
+            <a class="color4">Markdown</a>
+            
+            <a class="color4">blodTest</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-04-01 23:09:35'>2018-09-07 09:25</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:1k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
     
         
     
@@ -322,13 +376,17 @@
     }
 </style>
 </div>
-            <link rel="stylesheet" type="text/css" href="css/mysteel.css" charset="utf-8">
-<div12> 暗淡的彩虹石</div12>
-<div13>狂热的英文爱好者,从这一刻出发!</div13>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <link rel="stylesheet" type="text/css" href="css/mysteel.css" charset="utf-8">
+
+<p><div12> 暗淡的彩虹石</div12><br><br><br><div13>狂热的英文爱好者,从这一刻出发!</div13></p>
 <center><u>Main</u></center>
 <m2>MAY 11,2019</m2>
+<br>
 
-<p><m1>重构数学库</m1></p>
+<p><m1>重构数学库</p>
 <p> 我们引擎中使用的数学库已经修修补补很久了。期间积累了很多想法。最近在对引擎做性能优化，把一些找到的热点系统用 C/C++ 改写，顺便就重构了一下数学库，让它更好的兼顾 Lua API 和 C API 。</p>
 
 <p>上一次对数学库的改进是三年前的事情了。这三年的使用，我们发现，基于一个栈的 DSL 虽然可以减轻 Lua 和 C 之间的通讯成本，但是使用起来并不方便。大部分时候，我们还是倾向更传统的接口：一次数学运算调用一次函数。而高复杂度的数学运算完全可以放在独立的 C 模块中完成。结合 ECS 系统，我们可以在 C side 集中批量处理相同但数量巨大的数学运算。</p>
@@ -362,13 +420,26 @@
 
 <p><div14>Mie哥 提交于 02: 24 PM | 固定链接 | 留言 (1)</div14></p>
 <hr></hr>
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1370737555@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -377,11 +448,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 <div class="hide_box" onclick="dashangToggle()"></div>
