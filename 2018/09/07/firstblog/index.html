@@ -55,10 +55,11 @@
 
 
 
-<body>
-<aside class="nav">
-    <div class="nav-left">
-        <a href="/"
+
+    <body>
+        <aside class="nav">
+            <div class="nav-left">
+                <a href="/"
    class="avatar_target">
     <img class="avatar"
          src="/img/avatar.jpg"/>
@@ -172,9 +173,9 @@
     <span id="busuanzi_value_site_pv"></span>
 </div>
 
-    </div>
-    <div class="nav-right">
-        <div class="friends-area">
+            </div>
+            <div class="nav-right">
+                <div class="friends-area">
     <div class="friends-title">
         友情链接
         <i class="iconfont icon-left"></i>
@@ -187,7 +188,7 @@
         </ul>
     </div>
 </div>
-        <div class="title-list">
+                    <div class="title-list">
     <div class="right-top">
         <div id="default-panel">
             <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
@@ -260,17 +261,18 @@
     </div>
 </div>
 
-    </div>
-    <div class="hide-list">
-        <div class="semicircle" data-title="切换全屏 快捷键 s">
-            <div class="brackets first"><</div>
-            <div class="brackets">&gt;</div>
-        </div>
-    </div>
-</aside>
-<div id="post">
-    <div class="pjax">
-        <link rel="stylesheet" href="/css/mysteel.css">
+            </div>
+            <div class="hide-list">
+                <div class="semicircle" data-title="切换全屏 快捷键 s">
+                    <div class="brackets first">
+                        << /div>
+                            <div class="brackets">&gt;</div>
+                    </div>
+                </div>
+        </aside>
+        <div id="post">
+            <div class="pjax">
+                <link rel="stylesheet" href="/css/mysteel.css">
 <div12> 暗淡的彩虹石</div12>
 <div13>狂热的英文爱好者,从这一刻出发!</div13>
 <article id="post-firstblog" class="article article-type-post" itemscope itemprop="blogPost">
@@ -407,22 +409,22 @@
 
 
 
-    </div>
-    <div class="copyright">
-        <p class="footer-entry">
+            </div>
+            <div class="copyright">
+                <p class="footer-entry">
     ©2016-2020 Yelog
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
-    </div>
-    <div class="full-toc">
-        <button class="full" data-title="切换全屏 快捷键 s"><span
+            </div>
+            <div class="full-toc">
+                <button class="full" data-title="切换全屏 快捷键 s"><span
         class="min "></span></button>
 <a class="" id="rocket"></a>
-    </div>
-</div>
-
-<div class="hide_box" onclick="dashangToggle()"></div>
+            </div>
+        </div>
+        
+            <div class="hide_box" onclick="dashangToggle()"></div>
 <div class="shang_box">
     <a class="shang_close"  onclick="dashangToggle()">×</a>
     <div class="shang_tit">
@@ -439,9 +441,13 @@
     </div>
 </div>
 
-
-</body>
-<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+                
+                    <canvas class="fireworks"
+                        style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+                    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+                    <script type="text/javascript" src="/js/fireworks.js"></script>
+    </body>
+    <script src="/js/jquery.pjax.js?v=1.1.0" ></script>
 
 <script src="/js/script.js?v=1.1.0" ></script>
 <script>
@@ -616,6 +622,7 @@
 
     
 </style>
+
 
 
 
