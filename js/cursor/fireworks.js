@@ -24,7 +24,7 @@ class Circle {
 }
 
 class Boom {
-  constructor ({ origin, context, circleCount = 16, area }) {
+  constructor({ origin, context, circleCount = 16, area }) {
     this.origin = origin
     this.context = context
     this.circleCount = circleCount
@@ -49,7 +49,7 @@ class Boom {
   }
 
   init() {
-    for(let i = 0; i < this.circleCount; i++) {
+    for (let i = 0; i < this.circleCount; i++) {
       const circle = new Circle({
         context: this.context,
         origin: this.origin,
