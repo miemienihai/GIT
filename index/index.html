@@ -305,7 +305,7 @@
         
     </div>
     
-    <!-- <div class="toc-ref">
+    <div class="toc-ref">
     
         
     
@@ -319,7 +319,7 @@
         display: none !important;
     }
 </style>
-</div> -->
+</div>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -407,9 +407,28 @@
 
     </div>
     <div class="full-toc">
-        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
-<a class="" id="rocket" ></a>
+        <button class="full" data-title="切换全屏 快捷键 s"><span
+        class="min "></span></button>
+<!-- <a class="" id="rocket" ></a> -->
 
+//自定义回到顶部样式
+.back-to-top {
+right: 60px;
+width: 70px; //图片素材宽度
+height: 900px; //图片素材高度
+top: -900px;
+bottom: unset;
+transition: all .5s ease-in-out;
+background: url("/images/scroll.png");
+
+//隐藏箭头图标
+> i {
+display: none;
+}
+
+&.back-to-top-on {
+bottom: unset;
+top: 100vh < (900px + 200px) ? calc( 100vh - 900px - 200px ) : 0px; } }
     </div>
 </div>
 
