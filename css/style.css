@@ -555,10 +555,10 @@
   transition: all 0.5s ease-in-out;
   background: url("/images/scroll.png");
 }
-.full-toc #rocket > i {
+.full-toc #rocket .back-to-top > i {
   display: none;
 }
-.full-toc #rocket.back-to-top-on {
+.full-toc #rocket .back-to-top.back-to-top-on {
   bottom: unset;
   top: calc(100vh - 900px - 200px);
 }
