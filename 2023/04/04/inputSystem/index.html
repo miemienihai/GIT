@@ -139,7 +139,21 @@
                     <div data-rel="Markdown">
                         
                         Markdown
-                        <small>(2)</small>
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Unity插件">
+                        
+                        Unity插件
+                        <small>(1)</small>
                         
                     </div>
                     
@@ -168,7 +182,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="3">
-<input type="hidden" id="yelog_site_word_count" value="2.5k">
+<input type="hidden" id="yelog_site_word_count" value="3.4k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -254,7 +268,7 @@
         </a>
         
         
-        <a  class="全部文章 Markdown "
+        <a  class="全部文章 Unity插件 "
            href="/2023/04/04/inputSystem/"
            data-tag="Markdown,Unity,InputSystem"
            data-author="" >
@@ -305,7 +319,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Markdown">Markdown</a>
+            <a  data-rel="Unity插件">Unity插件</a>
             
         </span>
         
@@ -324,12 +338,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-04-04 13:15:12'>2023-04-04 12:52</time>
+            发布时间 : <time class="date" title='最后更新: 2023-04-04 22:07:32'>2023-04-04 12:52</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:479</span>
+        <span>字数:1.4k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -371,6 +385,33 @@
 <p> 在Unity Input System中，Action是指一组输入映射的集合，用于将多个Control映射到一个或多个操作上。Action提供了一种更高级别的输入处理方式，通过Action，可以将多个Control绑定到同一个操作上，并为操作定义一个名称、类型、默认值等属性。为什么要引出Action,我猜测这个就是new input system的优势,将具体的物理按键Control 和代表一种抽象的运动向前运动的层级分开</p>
 <p> Input Binding就是将一个Input Control绑定到一个Input Action上，从而使得当用户按下或者释放输入设备上的某个按钮或轴时，能够触发Input Action的回调函数,当然input Binding 自然可以绑定多个input Control 到Action 上,具体的Input Binding是内部形式,我也不知道,欢迎留言</p>
 <p> 引入Input Maps是为了方便我们区分不同的设备映射,键盘需要一套按键控制映射的Map,手柄当然也是非常稀缺的,Input Maps是一组Input Action的集合，用于将Input Actions映射到游戏中的具体操作。Device则代表了具体物理的输入设备，包括键盘、鼠标、手柄等，它拥有标识码,厂家码等信息来代表,Unity 官方跟你定义好了Control , 因此Device都包含了一组Input Control，代表了输入设备上的各种控制（如按键、轴等）</p>
+
+
+<center><u>Secend</u></center>
+
+
+<p><m1>Actions的基础用法</p>
+<p> map 和 action 都可以enable ,所以map 可以实现 切换的控制方案,一旦开启enable aciton将会开始监视controls的变换, started 本质都是回调函数,control的状态(按下)发送变化的时候,传递值,Action每个回调接收一个 InputActionCallbackContext结构,Action 可以使用中读取值（ InputAction.CallbackContext.ReadValue) 所以我们在写Action 回调函数的时候,都会在参数中添加一个callbackContext的参数,map和Input System 都有回调函数,可以用于监听Control改变带来整个Action Map响应 , InputActionTrace ,可以记录CallbackText的值和Action 和map 还有system,可以看看手册</p>
+
+<hr></hr>
+
+<center><u>third</u></center>
+
+<p><m1>bindings的基础用法</p>
+<p> 对于这一章的binding,了解Unity提供的几种绑定形式,这个也叫做input Binding类的CompositeType,例如:普通的binding 和positive\Negative binding, 还有 one Modifer, Two modifer(提示创建面板中创建binding的时候,和后面选择Composite Type效果一样), 关于binding 你了解Unity 提供了5种定义好的复合形式Binding,例如 1D ,2D ,3D ,one Modifier,关于modifier 和binding,modifer代表control, bindding 代表s,所以他们就是代表组合键 Control+s,two Modifer 自然代表 Control +shift+s ,这种组合键 ,modifer 一般代表附加键</p>
+<p>Unity 5种Binding,每种复合中,都有独特的名称,例如 1D 一维形式, 他的AddCompositeBinding(书写"Axis"表示1维).with(一个叫"Positive").With(一个叫"Negative"),这两个固定参数,可以翻阅文档查看,其他复合绑定也如此, binding 的三种模拟的模式  : Analog Mode（模拟模式）   DigitalNormalized Mode（数字归一化模式）  Digital Mode（数字模式）</p>
+<p>在Analog Mode下，Input Control的值会被映射到一个范围为-1到1的浮点数，表示Input Control的强度大小,他的值的大小代表手柄遥感倾斜程度, DigitalNormalized Mode（数字归一化模式） Input Control的值会被映射到一个范围为0到1的浮点数，表示Input Control的按下程度,他的值和Digital 不同的是,他是一个范围浮点值,Digital Mode（数字模式）：只有两个值,例如，当按下键盘上的空格键时，它的值为1，当松开时，它的值为0。</p>
+
+<hr></hr>
+
+<p><m1>Interactions(交互方式)</p>
+<p>  Interactions交互方式,主要就是Waiting ,Started ,Performed,Canceld ,四种交互方式,Unity 自定义了一套默认交互,用于决定当Control 处于某种状态或者超过一定值来触发不同的回调函数.一个Action多个交互的方式,他会按照交互排列的方式,来响应解决冲突,一个交互他都有时间限制,超过就不算了,交互的本质,是利用值和时间来响应Control按压的程度,然后回调函数,unity 预定了默认的交互, value ,button , passThrough(他是通过脚本直接传递值) ,Press, Hold ,Tap, SlowTap,MutiTap(多次连击),多种交互方式, 参数了解,pressPoint(Value 代表你要按压的那个点的值,0.3代表你按下0.3以后才能start转变成Preformed) ,durtion 持续时间 ,taptieme 连击的时间,tapCount 连击次数.</p>
+
+<hr></hr>
+
+<p><m1>Processors(处理交互时候产生值的变形)</p>
+<p>  关于处理器Processors 他只关注输入数据的变化,他并不关心回调函数的触发时机, 代码中可以通过 Binding 类 .WithProcessor("invertVector2(invertX=false)");正常绑定, Action创造依旧可以绑定, new InputAction(processors: "invertVector2(invertX=false)"); 对于Action 创作绑定,前面多次提到,问题的关键就是,他都是使用processors:这种写法,这里是c#语法,我不太清楚,你自己查查..</p>
+
 
 <p><div14>Mie哥 提交于 02: 24 PM | 固定链接 | 留言 (1)</div14></p>
 <hr></hr>
