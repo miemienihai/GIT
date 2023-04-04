@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>理解unityInputSystem</title>
+      <link href="/2023/04/04/inputSystem/"/>
+      <url>/2023/04/04/inputSystem/</url>
+      
+        <content type="html"><![CDATA[<center><u>Main</u></center><br><m1>InputSystem基础概念梳理<p> Controls是Input System中的一个重要概念，它们的作用类似于Unity中的GameObject，可以通过代码来获取、创建、修改和管理。可以使用InputSystem.GetControls()方法获取所有的Control,Control.ReadValue()方法获取Control当前的值。换而言之Control就是指向了具体的按键,例如control1代表键盘按键a</p><p> 在Unity Input System中，Action是指一组输入映射的集合，用于将多个Control映射到一个或多个操作上。Action提供了一种更高级别的输入处理方式，通过Action，可以将多个Control绑定到同一个操作上，并为操作定义一个名称、类型、默认值等属性。为什么要引出Action,我猜测这个就是new input system的优势,将具体的物理按键Control 和代表一种抽象的运动向前运动的层级分开</p><p> Input Binding就是将一个Input Control绑定到一个Input Action上，从而使得当用户按下或者释放输入设备上的某个按钮或轴时，能够触发Input Action的回调函数,当然input Binding 自然可以绑定多个input Control 到Action 上,具体的Input Binding是内部形式,我也不知道,欢迎留言</p><p> 引入Input Maps是为了方便我们区分不同的设备映射,键盘需要一套按键控制映射的Map,手柄当然也是非常稀缺的,Input Maps是一组Input Action的集合，用于将Input Actions映射到游戏中的具体操作。Device则代表了具体物理的输入设备，包括键盘、鼠标、手柄等，它拥有标识码,厂家码等信息来代表,Unity 官方跟你定义好了Control , 因此Device都包含了一组Input Control，代表了输入设备上的各种控制（如按键、轴等）</p><p><div14>Mie哥 提交于 02: 24 PM | 固定链接 | 留言 (1)</div14></p><hr></hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+            <tag> Unity </tag>
+            
+            <tag> InputSystem </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>typora-vue-theme主题介绍</title>
       <link href="/2023/04/03/firstblog/"/>
       <url>/2023/04/03/firstblog/</url>
